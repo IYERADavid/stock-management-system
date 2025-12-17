@@ -1,0 +1,29 @@
+# Windows Makefile for Stock Management System
+# Use with MSYS2/MinGW or Windows with pkg-config
+
+CC = gcc
+CFLAGS = -Wall -std=c99
+GTK_FLAGS = `pkg-config --cflags --libs gtk+-3.0`
+TARGET = StockManager.exe
+SRCDIR = src
+SOURCES = $(SRCDIR)/main.c $(SRCDIR)/gui.c $(SRCDIR)/product.c $(SRCDIR)/file.c $(SRCDIR)/stock.c $(SRCDIR)/report.c
+OBJECTS = $(SOURCES:.c=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET) $(GTK_FLAGS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ $(GTK_FLAGS)
+
+clean:
+	@if exist $(OBJECTS) del /Q $(OBJECTS) 2>nul
+	@if exist $(TARGET) del /Q $(TARGET) 2>nul
+	@if exist data\temp.dat del /Q data\temp.dat 2>nul
+
+run: $(TARGET)
+	$(TARGET)
+
+.PHONY: all clean run
+

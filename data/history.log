@@ -1,0 +1,12 @@
+2025-12-16 11:23:26 - ADD Product ID 1
+2025-12-16 11:25:00 - SELL Product ID 1
+[2025-12-16 11:52:37] PRODUCT REMOVED - Product ID: 1 - Product: shoes | Category: clothing | Removed from inventory
+[2025-12-16 11:53:26] PRODUCT ADDED - Product ID: 1 - Product: tds | Category: ss | Initial Quantity: 48 | Price: 356.00 per unit
+[2025-12-17 12:18:50] PRODUCT ADDED - Product ID: 57 - Product: software | Category: IT | Initial Quantity: 39 | Price: 265.00 per unit
+[2025-12-17 12:20:53] PRODUCT ADDED - Product ID: 34 - Product: phones | Category: accessories | Initial Quantity: 1 | Price: 400.00 per unit
+[2025-12-17 12:24:04] STOCK UPDATE - Product ID: 1 - Product: tds | Added: 6 units | Old Stock: 48 | New Stock: 54
+[2025-12-17 12:27:50] PRODUCT SOLD - Product ID: 1 - Product: tds | Quantity: 51 | Unit Price: 356.00 | Original Total: 18156.00 | Discount: 15% (2723.40) | Final Amount: 15432.60 | Stock: 54 -> 3
+[2025-12-17 12:31:32] PRODUCT REMOVED - Product ID: 1 - Product: tds | Category: ss | Removed from inventory
+[2025-12-17 12:36:34] PRODUCT SOLD - Product ID: 57 - Product: software | Quantity: 10 | Unit Price: 265.00 | Original Total: 2650.00 | Discount: 15% (397.50) | Final Amount: 2252.50 | Stock: 39 -> 29
+[2025-12-17 14:55:51] STOCK UPDATE - Product ID: 34 - Product: phones | Added: 10 units | Old Stock: 1 | New Stock: 11
+[2025-12-17 14:56:42] PRODUCT SOLD - Product ID: 34 - Product: phones | Quantity: 7 | Unit Price: 400.00 | Original Total: 2800.00 | Discount: 18% (504.00) | Final Amount: 2296.00 | Stock: 11 -> 4
